@@ -1,5 +1,5 @@
 {
-  "name": "rete",
+  "name": "@vamidicreations/rete",
   "version": "1.4.5",
   "description": "JavaScript framework",
   "main": "build/rete.common.js",
