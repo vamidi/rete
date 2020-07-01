@@ -1,6 +1,6 @@
 {
   "name": "rete",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "description": "JavaScript framework",
   "main": "build/rete.common.js",
   "module": "build/rete.esm.js",
@@ -11,13 +11,13 @@
     "prepublishOnly": "npm run lint && npm run build",
     "prebuild": "npm run lint & npm test && npm run types",
     "lint": "tsc && eslint --ext .ts --ext .js src",
-    "test": "BABEL_ENV=test mocha -r ts-node/register test/**.ts",
+    "test": "cross-env BABEL_ENV=test mocha -r ts-node/register test/**.ts",
     "coverage": "nyc npm run test",
     "types": "tsc src/index.ts --target es5 --declaration --outDir ./types --downlevelIteration --emitDeclarationOnly"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/retejs/rete.git"
+    "url": "git+https://github.com/vamidi/rete.git"
   },
   "keywords": [
     "dataflow",
@@ -25,12 +25,12 @@
     "node editor",
     "js"
   ],
-  "author": "Vitaliy Stoliarov",
+  "author": "Vitaliy Stoliarov - Changed by Valencio Hoffman",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/retejs/rete/issues"
   },
-  "homepage": "https://github.com/retejs/rete#readme",
+  "homepage": "https://github.com/vamidi/rete#readme",
   "devDependencies": {
     "@babel/preset-typescript": "^7.3.3",
     "@types/jsdom": "^12.2.2",
